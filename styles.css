@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tajawal", sans-serif;
+}
+
+body{
+    background: #f5fdf6;
+    padding-bottom: 40px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 15px auto;
+    padding: 12px 25px;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+header img{ height: 40px; border-radius: 50%; }
+.navigation ul{ display:flex; list-style:none; gap:2rem; }
+.navigation a{ text-decoration:none; color:#006C35; font-weight:700; }
+.navigation a:hover{ color:#FFD700; }
+
+/* القسم الاول */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 60px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0,108,53,0.12);
+    border: 1px solid #e8f5e9;
+    flex-direction: row;
+}
+
+.hero-img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 5px solid #006C35;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    flex-shrink: 0;
+}
+
+.hero-text{
+    text-align: right;
+    flex: 1;
+}
+
+.title{
+    font-size: 2.2rem;
+    color: #006C35;
+    font-weight: 900;
+}
+
+.qusion{
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 8px;
+    font-weight: 700;
+}
+
+.desc{
+    margin-top: 12px;
+    color: #666;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.herobtns{ margin-top: 20px; }
+
+.qn{
+    background: linear-gradient(135deg,#006C35,#00A651);
+    color: white;
+    padding: 10px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0,108,53,0.3);
+    transition: 0.3s;
+}
+.qn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,108,53,0.4);
+}
+
+/* القسم الثاني */
+.Aboutking{
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.king-card{
+    display: flex;
+    gap: 30px;
+    background: white;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    border-right: 6px solid #006C35;
+    align-items: flex-start;
+}
+
+.king-img{
+    width: 240px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 4px solid #FFD700;
+    flex-shrink: 0;
+}
+
+.king-info{ text-align: right; }
+
+.king-info h2{
+    color: #006C35;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.king-info h3{
+    color: #006C35;
+    font-size: 1.1rem;
+    margin: 18px 0 8px;
+    background: #f0fff0;
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.king-info p{
+    color: #555;
+    line-height: 1.9;
+    font-size: 1rem;
+}
+
+.dua{
+    display: inline-block;
+    margin-top: 15px;
+    background: #006C35;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+/* للجوال - صلحت الاثنين */
+@media(max-width: 700px){
+    header{ margin: 10px; border-radius: 20px; }
+    .hero{ flex-direction: column; text-align: center; margin: 20px; padding: 25px; }
+    .hero-text{ text-align: center; }
+    .hero-img{ width: 180px; height: 180px; }
+    .king-card{ flex-direction: column; align-items: center; }
+    .king-img{ width: 100%; height: 280px; }
+    .king-info{ text-align: center; }
+}
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tajawal", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #f5fdf6;
+    padding-bottom: 50px;
+}
+
+/* ===== Header ===== */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 15px auto;
+    padding: 12px 25px;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+header img{ height: 40px; border-radius: 50%; }
+.navigation ul{ display:flex; list-style:none; gap:2rem; }
+.navigation a{ text-decoration:none; color:#006C35; font-weight:700; }
+.navigation a:hover{ color:#FFD700; }
+
+/* ===== Hero - الصورة يسار ===== */
+.hero{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0,108,53,0.12);
+    border: 1px solid #e8f5e9;
+}
+.hero-img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 5px solid #006C35;
+    flex-shrink: 0;
+}
+.hero-text{ text-align: right; flex: 1; }
+.title{ font-size: 2.2rem; color:#006C35; font-weight:900; }
+.qusion{ font-size:1.4rem; color:#333; margin-top:8px; }
+.desc{ margin-top:12px; color:#666; line-height:1.8; }
+.qn{
+    margin-top:18px;
+    display:inline-block;
+    background: linear-gradient(135deg,#006C35,#00A651);
+    color:white;
+    padding:10px 28px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+}
+
+/* ===== الملك عبدالعزيز ===== */
+.Aboutking{ max-width:1000px; margin:30px auto; padding:0 20px; }
+.king-card{
+    display:flex; gap:30px; background:white; border-radius:24px;
+    padding:30px; box-shadow:0 10px 40px rgba(0,0,0,0.08);
+    border-right:6px solid #006C35;
+}
+.king-img{ width:240px; height:300px; object-fit:cover; border-radius:18px; border:4px solid #FFD700; flex-shrink:0; }
+.king-info{ text-align:right; }
+.king-info h2{ color:#006C35; font-size:1.8rem; font-weight:900; margin-bottom:12px; }
+.king-info h3{ color:#006C35; background:#f0fff0; padding:6px 12px; border-radius:8px; display:inline-block; margin:15px 0 8px; }
+.king-info p{ color:#555; line-height:1.9; }
+.dua{ display:inline-block; margin-top:15px; background:#006C35; color:white; padding:8px 18px; border-radius:50px; font-weight:700; }
+
+/* ===== About Me ===== */
+.about-section{
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.about-card{
+    background: white;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    border-left: 6px solid #FFD700;
+    text-align: right;
+}
+.about-card h2{
+    color: #006C35;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.about-card p{
+    color: #555;
+    line-height: 2;
+    font-size: 1.05rem;
+}
+.certs{ margin-top: 25px; }
+.certs h3{ color: #006C35; margin-bottom: 15px; }
+.cert-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+.cert{
+    background: #f5fdf6;
+    border: 1px solid #e8f5e9;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+.cert span{ font-size: 28px; display: block; margin-bottom: 5px; }
+.cert p{ font-size: 0.95rem; font-weight: 700; color: #333; line-height: 1.4; }
+.cert small{ color: #777; font-weight: 400; }
+
+/* ===== جوال ===== */
+@media(max-width:700px){
+  header{ margin:10px; border-radius:20px; }
+  .hero, .king-card{ flex-direction:column; text-align:center; margin:20px; }
+  .hero-text, .king-info, .about-card{ text-align:center; }
+  .hero-img{ width:180px; height:180px; }
+  .king-img{ width:100%; height:280px; }
+}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عني</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Tajawal",sans-serif}
+body{background:#f5fdf6;display:flex;justify-content:center;align-items:center;min-height:100vh;padding:20px}
+.about-card{background:white;border-radius:24px;padding:40px;max-width:600px;box-shadow:0 10px 40px rgba(0,0,0,.08);border-left:6px solid #FFD700;text-align:right}
+.about-card h1{color:#006C35;font-size:2rem;margin-bottom:15px}
+.about-card p{color:#555;line-height:2.2;font-size:1.15rem}
+.back{display:inline-block;margin-top:20px;background:#006C35;color:white;padding:10px 25px;border-radius:50px;text-decoration:none}
+</style>
+</head>
+<body>
+
+<div class="about-card">
+  <h1>عني</h1>
+  <p>
+    أنا طالب كلية في مجال التقنية، جالس أطور من نفسي يوم عن يوم في البرمجة وتصميم المواقع.
+    أحب أتعلم شي جديد كل يوم وأطبقه في مشاريعي، وهذا الموقع واحد من مشاريعي بمناسبة اليوم الوطني 96 (عزنا بطبعنا).
+    <br><br>
+    هدفي أكون مبرمج محترف وأخدم وطني بتقنيات حديثة.
+  </p>
+  <a class="back" href="index.html">رجوع للرئيسية ←</a>
+</div>
+
+</body>
+</html>
