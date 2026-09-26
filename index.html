@@ -16,69 +16,41 @@ nav a{text-decoration:none;color:#006C35;font-weight:700}
 .hero-img{width:200px;height:200px;object-fit:cover;border-radius:20px;border:5px solid #006C35}
 .hero-text{flex:1;text-align:right}
 .title{font-size:2.2rem;color:#006C35;font-weight:900}
-.qusion{font-size:1.3rem;color:#333;margin-top:8px}
 .desc{margin-top:12px;color:#666;line-height:1.8}
 .qn{margin-top:18px;display:inline-block;background:#006C35;color:white;padding:10px 28px;border-radius:50px;text-decoration:none;font-weight:700}
-.Aboutking{max-width:1000px;margin:30px auto;padding:0 15px}
-.king-card{display:flex;gap:30px;background:white;border-radius:24px;padding:30px;box-shadow:0 10px 40px rgba(0,0,0,.08);border-right:6px solid #006C35}
+.king-card{max-width:1000px;margin:30px auto;display:flex;gap:30px;background:white;border-radius:24px;padding:30px;box-shadow:0 10px 40px rgba(0,0,0,.08);border-right:6px solid #006C35}
 .king-img{width:240px;height:300px;object-fit:cover;border-radius:18px;border:4px solid #FFD700}
 .king-info{text-align:right}
 .king-info h2{color:#006C35;font-size:1.7rem;margin-bottom:12px}
-.king-info h3{background:#f0fff0;color:#006C35;padding:5px 12px;border-radius:8px;display:inline-block;margin:15px 0 8px}
-.king-info p{color:#555;line-height:1.9}
-.dua{display:inline-block;margin-top:15px;background:#006C35;color:white;padding:8px 18px;border-radius:50px}
 .about-section{max-width:1000px;margin:40px auto;padding:0 15px}
 .about-card{background:white;border-radius:24px;padding:35px;box-shadow:0 10px 40px rgba(0,0,0,.08);border-left:6px solid #FFD700;text-align:right}
-.about-card h2{color:#006C35;font-size:1.7rem;margin-bottom:12px}
-.about-card p{color:#555;line-height:2.2;font-size:1.1rem}
-@media(max-width:700px){.hero,.king-card{flex-direction:column;text-align:center;margin:20px}.hero-text,.king-info,.about-card{text-align:center}.king-img{width:100%;height:260px}}
 </style>
 </head>
 <body>
-
 <header>
-  <img src="assets/imgs/logo.jpg" alt="logo"/>
-  <nav>
-    <ul>
-      <li><a href="#about">عني</a></li>
-    </ul>
-  </nav>
+  <img src="logo.jpg" alt="logo"/>
+  <nav><ul><li><a href="#about">عني</a></li></ul></nav>
 </header>
-
 <section class="hero">
-  <img src="assets/imgs/يوم وطني السعودي 96.jpg" class="hero-img" alt="اليوم الوطني">
+  <img src="يوم وطني السعودي 96.jpg" class="hero-img" alt="اليوم الوطني">
   <div class="hero-text">
     <h1 class="title">اليوم الوطني السعودي 96</h1>
-    <h1 class="qusion">ليش نحتفل باليوم السعودي 96 بالضبط؟</h1>
     <p class="desc">نحتفل بتوحيد المملكة على يد الملك عبدالعزيز - رحمه الله - وفخرنا بماضينا وطموحنا لمستقبلنا في ظل رؤية 2030.</p>
     <a class="qn" href="https://www.google.com/search?q=لماذا+نحتفل+باليوم+الوطني+السعودي+96" target="_blank">اعرف ليش 💚</a>
   </div>
 </section>
-
-<section class="Aboutking" id="king">
-  <div class="king-card">
-    <img src="assets/imgs/king abdullaziz.jpg" class="king-img" alt="الملك عبدالعزيز">
-    <div class="king-info">
-      <h2>الملك عبدالعزيز - رحمه الله</h2>
-      <h3>كيف وحّد السعودية؟</h3>
-      <p>استعاد الرياض 1902م مع 40 رجل، ووحد المناطق على مدى 32 سنة حتى أعلن التوحيد 23 سبتمبر 1932م.</p>
-      <h3>كيف مات رحمه الله؟</h3>
-      <p>توفي في الطائف 9 نوفمبر 1953م عن 77 سنة ودُفن في مقبرة العود بالرياض.</p>
-      <span class="dua">رحمه الله وغفر له 💚</span>
-    </div>
+<div class="king-card" id="king">
+  <img src="king abdullaziz.jpg" class="king-img" alt="الملك عبدالعزيز">
+  <div class="king-info">
+    <h2>الملك عبدالعزيز - رحمه الله</h2>
+    <p>استعاد الرياض 1902م مع 40 رجل، ووحد المناطق على مدى 32 سنة حتى أعلن التوحيد 23 سبتمبر 1932م.<br>توفي في الطائف 9 نوفمبر 1953م عن 77 سنة.</p>
   </div>
-</section>
-
+</div>
 <section id="about" class="about-section">
   <div class="about-card">
     <h2>عني</h2>
-    <p>
-      أنا طالب كلية في مجال التقنية، جالس أطور من نفسي يوم عن يوم في البرمجة وتصميم المواقع.
-      وهذا الموقع واحد من مشاريعي بمناسبة اليوم الوطني 96 (عزنا بطبعنا).
-      هدفي أكون مبرمج محترف وأخدم وطني بتقنيات حديثة.
-    </p>
+    <p>أنا طالب كلية في مجال التقنية، جالس أطور من نفسي يوم عن يوم في البرمجة وتصميم المواقع. وهذا الموقع واحد من مشاريعي بمناسبة اليوم الوطني 96 (عزنا بطبعنا).</p>
   </div>
 </section>
-
 </body>
 </html>
